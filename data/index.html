@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DG Local Chat</title>
+  <link rel="stylesheet" href="/ui_manager.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <main class="chat">
+    <header>
+      <h1>local_server</h1>
+      <p>Chat lokal · ESP32 - host</p>
+    </header>
+
+    <label for="name">Nama yu</label>
+    <input id="name" maxlength="20" placeholder="Masukkan nama">
+
+    <section id="messages" aria-live="polite">
+      <p class="system">welcome</p>.</p>
+    </section>
+
+    <form id="chat-form">
+      <input id="message" maxlength="160"
+        placeholder="Tulis pesan..." autocomplete="off" required>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <p id="status">Menghubungkan...</p>
+  </main>
+</body>
+</html>
